@@ -1,36 +1,34 @@
-/* Style the main heading */
 h1 {
     color: #0066ff;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
-    font-weight: bold;
 }
 
-/* Style company information */
 .company-info {
     background-color: #f0f0f0;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+    position: relative;
+    left: 20px;  /* Move 20px to the right */
+    top: 10px;   /* Move 10px below its current position */
 }
 
-/* Style stock details */
 .stock-details {
-    margin-top: 20px;
+    background-color: lightcyan;  /* Change background to lightcyan */
+    padding: 10px;                /* Padding of 10px on all sides */
+    position: fixed;              /* Fix the position to the bottom-right */
+    bottom: 10px;                 /* 10px offset from the bottom */
+    right: 10px;                  /* 10px offset from the right */
 }
 
-/* Use descendant combinator to style all paragraphs within stock details */
-.stock-details p {
-    font-style: italic;
-}
-
-/* Style specific paragraphs within stock details using the descendant combinator */
 .stock-details .current-price p {
     color: green;
 }
 
 .stock-details .price-change p {
     color: red;
+    position: sticky;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    height: 2000px; /* To enable scrolling */
 }
