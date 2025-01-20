@@ -24,3 +24,8 @@
 // console.log(companyName.substring(0, 4)) // Use the substring method
 // console.log(companyName.substring(0,4).toUpperCase()) // Use the toUpperCase method
 
+const DayOneClosingPrice = "87.14";
+const DayTwoClosingPrice = "84.22";
+
+const avgPrice = (parseFloat(DayOneClosingPrice) + parseFloat(DayTwoClosingPrice)) / 2;
+console.log(avgPrice);
