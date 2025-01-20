@@ -61,3 +61,17 @@
 // (45 - 20) > 4 * 20 // false
 // 2 * 3 < 4 * 5 || 90 - 45 > 4**3 // true
 // 100 / 10 < (4 + 5) / 2 && !(32 < 20) // false
+
+const stockOHLC = {
+	open: 81.12,
+	high: 82.59,
+	low: 80.09,
+	close: 84.71,
+}
+
+if(stockOHLC.open > stockOHLC.close){
+    console.log("Stock is bearish");
+}
+else if(stockOHLC.open < stockOHLC.close){
+    console.log("Stock is bullish");
+}
