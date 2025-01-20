@@ -13,8 +13,14 @@
 // company = 'Micrsoft\'s' // Use escape sequences
 // console.log(company);
 
-const companyName = "Amazon"
-const companyRating = 5
+// const companyName = "Amazon"
+// const companyRating = 5
 
-const companyInfo = companyName + " has a customer satisfaction rating of " + companyRating  // Use string concatenation
-console.log(companyInfo);
+// const companyInfo = companyName + " has a customer satisfaction rating of " + companyRating  // Use string concatenation
+// console.log(companyInfo);
+
+// const companyName = "Metaa"
+
+// console.log(companyName.substring(0, 4)) // Use the substring method
+// console.log(companyName.substring(0,4).toUpperCase()) // Use the toUpperCase method
+
