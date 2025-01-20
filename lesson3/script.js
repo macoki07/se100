@@ -7,8 +7,14 @@
 // money *=3
 // console.log(money)
 
-let company = "Micrsoft's" // Use the correct quotation
-console.log(company);
+// let company = "Micrsoft's" // Use the correct quotation
+// console.log(company);
 
-company = 'Micrsoft\'s' // Use escape sequences
-console.log(company);
+// company = 'Micrsoft\'s' // Use escape sequences
+// console.log(company);
+
+const companyName = "Amazon"
+const companyRating = 5
+
+const companyInfo = companyName + " has a customer satisfaction rating of " + companyRating  // Use string concatenation
+console.log(companyInfo);
