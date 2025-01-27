@@ -117,19 +117,41 @@
 
 // getBetween();
 
-const MSFTStockClosingPrices = [254.12, 253.12, 256.97, 257.52, 258.93];
-const AAPLStockClosingPrices = [256.45, 255.25, 259.1, 260.75, 261.88];
+// const MSFTStockClosingPrices = [254.12, 253.12, 256.97, 257.52, 258.93];
+// const AAPLStockClosingPrices = [256.45, 255.25, 259.1, 260.75, 261.88];
+
+// // Write your code below
+// function getBetween(array, name) {
+//   let count = 0;
+//   for (let index = 0; index < array.length; index++) {
+//     if (array[index] > 254 && array[index] < 257) {
+//       count++;
+//     }
+//   }
+//   console.log(`Closing price of ${name} between 254 to 257: ${count} days`);
+// }
+
+// getBetween(MSFTStockClosingPrices, "MSFT");
+// getBetween(AAPLStockClosingPrices, "AAPL");
+
+// const StockDailyPerformance = [3.1, 2.4, 1.1, 2.8, 4.5, 2.7]
+
+// // Write your code below
+// function sortNumbersAscending(array){
+//     // return array.sort();
+//     console.log("Sorted daily performance: [" + array.sort() + "]")
+// }
+
+// // Do not modify this code:
+// sortNumbersAscending(StockDailyPerformance);
+
+const StockDailyPerformance = [3.1, 2.4, 1.1, 2.8, 4.5, 2.7]
 
 // Write your code below
-function getBetween(array, name) {
-  let count = 0;
-  for (let index = 0; index < array.length; index++) {
-    if (array[index] > 254 && array[index] < 257) {
-      count++;
-    }
-  }
-  console.log(`Closing price of ${name} between 254 to 257: ${count} days`);
+const sortNumbersAscending = (array) => {
+    // return array.sort();
+    console.log("Sorted daily performance: [" + array.sort() + "]")
 }
 
-getBetween(MSFTStockClosingPrices, "MSFT");
-getBetween(AAPLStockClosingPrices, "AAPL");
+// Do not modify this code:
+sortNumbersAscending(StockDailyPerformance);
