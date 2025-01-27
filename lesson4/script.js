@@ -98,21 +98,38 @@
 
 // console.log("The total sum of closing prices of MSFT is " + sum.toFixed(2));
 
-function getBetween() {
-  const MSFTStockClosingPrices = [254.12, 253.12, 256.97, 257.52, 258.93];
+// function getBetween() {
+//   const MSFTStockClosingPrices = [254.12, 253.12, 256.97, 257.52, 258.93];
 
-  // Initialize a counter for prices between 254 and 257
+//   // Initialize a counter for prices between 254 and 257
+//   let count = 0;
+
+//   // Loop through each price in the array
+//   for (let i = 0; i < MSFTStockClosingPrices.length; i++) {
+//     if (MSFTStockClosingPrices[i] > 254 && MSFTStockClosingPrices[i] < 257) {
+//       count++;
+//     }
+//   }
+
+//   // Log the result in the console
+//   console.log(`Number of closing prices between 254 and 257: ${count}`);
+// }
+
+// getBetween();
+
+const MSFTStockClosingPrices = [254.12, 253.12, 256.97, 257.52, 258.93];
+const AAPLStockClosingPrices = [256.45, 255.25, 259.1, 260.75, 261.88];
+
+// Write your code below
+function getBetween(array, name) {
   let count = 0;
-
-  // Loop through each price in the array
-  for (let i = 0; i < MSFTStockClosingPrices.length; i++) {
-    if (MSFTStockClosingPrices[i] > 254 && MSFTStockClosingPrices[i] < 257) {
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] > 254 && array[index] < 257) {
       count++;
     }
   }
-
-  // Log the result in the console
-  console.log(`Number of closing prices between 254 and 257: ${count}`);
+  console.log(`Closing price of ${name} between 254 to 257: ${count} days`);
 }
 
-getBetween();
+getBetween(MSFTStockClosingPrices, "MSFT");
+getBetween(AAPLStockClosingPrices, "AAPL");
